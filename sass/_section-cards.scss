@@ -1,0 +1,113 @@
+
+
+/*--------------------- Nossas Delícias ---------------------*/
+.section-titulo {
+    width: 100%;
+    height: auto;
+    background: #fef8f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    font-weight: 900;
+    color: #E7686F;
+    padding-top: 4%;
+}
+
+.one {
+    width: 360px;
+    height: 2px;
+    margin: 0 auto;
+    position: relative;
+    top: 8px;
+    border: 2px solid #E7686F;
+    border-radius: 50%;
+}
+
+.two {
+    width: 360px;
+    height: 2px;
+    margin: 0 auto;
+    position: relative;
+    top: 8px;
+    border: 2px solid #E7686F;
+    border-radius: 50%;
+}
+
+.container-flip {
+    padding: 2%;
+    width: 100%;
+    height: auto;
+    background: #fef8f7;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+section .flip-card-front img {
+    width: 100%;
+    height: 100%;
+    border-radius: 2%;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 400px;
+    height: 300px;
+    perspective: 1000px;
+    margin: 1%;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.9s;
+    transform-style: preserve-3d;
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 2%;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 2%;
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+.flip-card-back {
+    background-color: #967D69;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.flip-card-back h1 {
+    font-size: 1.5em;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+    margin-top: 36px;
+}
+
+.flip-card-back p {
+    font-size: 1.2em;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+    margin-top: 36px;
+}

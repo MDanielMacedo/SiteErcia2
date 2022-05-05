@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Arizonia&family=Pacifico&display=swap');
+@import'./variables';
+@import'./mixins';
+@import './main';
+@import './header';
+@import './footer';
+@import './section-cards';
+@import './section-about';
+@import './produtos';
+@import './media-queries';
+@font-face {
+    font-family: font-midnight;
+    src: url('fonts/Midnight Bangkok.ttf') format('truetype'),
+         url('fonts/Midnight Bangkok.woff') format('woff');
+    }
+
+* {
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    background: #F8B1B7;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+a {
+    color: inherit;
+    font-family: $font-primary;
+    font-size: inherit;
+    text-decoration: none;
+}

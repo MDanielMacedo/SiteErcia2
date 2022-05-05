@@ -1,0 +1,20 @@
+/*------------------- Slide --------------------*/
+main {
+    width: 100%;
+    height: auto;
+    background: #F8B1B7;
+    overflow: hidden;
+}
+
+.container-carrosel {
+    width: 70%;
+    height: auto;
+    margin: auto;
+}
+
+.slider img {
+    width: 100%;
+    margin-top: 12%;
+    border: 8px solid white;
+    border-radius: 2%;
+}
